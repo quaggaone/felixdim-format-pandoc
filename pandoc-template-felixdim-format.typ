@@ -1,8 +1,8 @@
 // import specified template
 $if(template)$
-#import "lib/felixdim-format-typst/lib/$template$.typ": conf
+#import "lib/felixdim-format-typst/templates/$template$.typ": conf
 $else$
-#import "lib/felixdim-format-typst/lib/fd-doc.typ": conf
+#import "lib/felixdim-format-typst/templates/fd-doc.typ": conf
 $endif$
 
 #show: doc => conf(
