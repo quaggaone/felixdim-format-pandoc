@@ -1,6 +1,6 @@
 // import specified template
 $if(template)$
-#import "$template$": conf
+#import "lib/felixdim-format-typst/lib/$template$.typ": conf
 $else$
 #import "lib/felixdim-format-typst/lib/fd-doc.typ": conf
 $endif$
@@ -30,3 +30,5 @@ $if(region)$
 $endif$
   doc,
 )
+
+$body$
