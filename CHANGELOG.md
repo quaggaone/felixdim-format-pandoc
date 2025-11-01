@@ -1,3 +1,9 @@
+v0.0.3
+---
+
+- ADD pandoc’s `horizontalrule` to typst template
+
+
 v0.0.2
 ---
 

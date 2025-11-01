@@ -1,3 +1,7 @@
+// define pandoc specific variable
+#let horizontalrule = line(length: 100%)
+// this is pandoc’s translation of <hr> since typst doesn‘t have an equivalent as of now
+
 // import specified template
 $if(template)$
 #import "lib/felixdim-format-typst/templates/$template$.typ": conf
