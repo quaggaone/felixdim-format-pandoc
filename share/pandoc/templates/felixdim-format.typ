@@ -3,9 +3,9 @@
 // this is pandoc’s translation of <hr> since typst doesn‘t have an equivalent as of now
 
 // import specified template from local Typst package
-#import "@local/felixdim-format:0.0.2": conf
+#import "@local/felixdim-format:0.1.0": fd-doc
 
-#show: doc => conf(
+#show: doc => fd-doc(
 $if(title)$
   title: [$title$],
 $endif$

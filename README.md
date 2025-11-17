@@ -12,7 +12,7 @@ the shell script is available via homebrew:
 brew install quaggaone/tap/panfd
 ```
 
-**note:** this package depends on the [felixdim-format Typst template](https://github.com/quaggaone/felixdim-typst-templates) being installed as a local Typst package at `@local/felixdim-format:0.0.2`. the homebrew formula handles this installation automatically.
+**note:** this package depends on the [felixdim-format Typst template](https://github.com/quaggaone/felixdim-format-typst) being installed as a local Typst package at `@local/felixdim-format:x.y.z`. the homebrew formula handles this installation automatically.
 
 ## manual installation (macOS)
 
@@ -21,7 +21,7 @@ if installing manually without homebrew, you need to:
 1. install the Typst template as a local package:
    ```sh
    mkdir -p ~/Library/Application\ Support/typst/packages/local/felixdim-format
-   ln -s /path/to/felixdim-format-typst ~/Library/Application\ Support/typst/packages/local/felixdim-format/0.0.2
+   ln -s /path/to/felixdim-format-typst ~/Library/Application\ Support/typst/packages/local/felixdim-format/x.y.z
    ```
 
 2. ensure `panfd.sh` is in your PATH
