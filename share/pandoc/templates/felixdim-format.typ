@@ -2,12 +2,8 @@
 #let horizontalrule = line(length: 100%)
 // this is pandoc’s translation of <hr> since typst doesn‘t have an equivalent as of now
 
-// import specified template
-$if(template)$
-#import "lib/felixdim-format-typst/templates/$template$.typ": conf
-$else$
-#import "lib/felixdim-format-typst/templates/fd-doc.typ": conf
-$endif$
+// import specified template from local Typst package
+#import "@local/felixdim-format:0.0.2": conf
 
 #show: doc => conf(
 $if(title)$
