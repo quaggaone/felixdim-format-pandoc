@@ -3,7 +3,7 @@
 // this is pandoc’s translation of <hr> since typst doesn‘t have an equivalent as of now
 
 // import specified template from git subtree
-#import "/opt/homebrew/Cellar/panfd/0.1.0/lib/felixdim-format-typst/templates/fd-doc.typ": conf as fd-doc
+#import "/opt/homebrew/Cellar/panfd/0.1.2/lib/felixdim-format-typst/templates/fd-doc.typ": conf as fd-doc
 
 #show: doc => fd-doc(
 $if(title)$
