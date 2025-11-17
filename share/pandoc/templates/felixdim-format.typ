@@ -2,8 +2,8 @@
 #let horizontalrule = line(length: 100%)
 // this is pandoc’s translation of <hr> since typst doesn‘t have an equivalent as of now
 
-// import specified template from local Typst package
-#import "@local/felixdim-format:0.1.0": fd-doc
+// import specified template from git subtree
+#import "/opt/homebrew/Cellar/panfd/0.1.0/lib/felixdim-format-typst/templates/fd-doc.typ": conf as fd-doc
 
 #show: doc => fd-doc(
 $if(title)$
