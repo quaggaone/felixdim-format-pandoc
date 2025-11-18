@@ -4,6 +4,8 @@ shell script to convert MD to PDF using pandoc and custom template
 
 this repo contains the pandoc template to make the felixdim Typst template work without extra metadata or superfluous formatting.
 
+**note:** this repository is intended to be installed via Homebrew on Apple Silicon Macs.
+
 ## installation
 
 the shell script is available via homebrew:
