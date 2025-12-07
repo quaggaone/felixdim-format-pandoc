@@ -31,7 +31,11 @@ fi
 output_file="${input_dir}/$(basename "$input_file" .md).pdf"
 
 # Convert markdown to pdf using pandoc with template from script location
-pandoc "$input_file" -o "$output_file" --pdf-engine=typst --pdf-engine-opt=--root=/ --template="${script_dir}/../share/panfd/templates/felixdim-format.typ"
+pandoc "$input_file" -o "$output_file" \
+  --pdf-engine=typst \
+  --pdf-engine-opt=--root=/ \
+  --template="${script_dir}/../share/panfd/templates/felixdim-format.typ" \
+  --lua-filter="${script_dir}/../share/felixdim-format-typst/filters/date-converter.lua"
 
 # Check if the conversion was successful and provide feedback
 if [ $? -eq 0 ]; then

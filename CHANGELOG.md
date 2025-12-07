@@ -1,3 +1,11 @@
+v0.2.0
+---
+
+- ADD lua filter support for parsing date strings (YYYY-MM-DD or YYYY/MM/DD) to structured components
+- UPDATE panfd.sh script to include date-converter.lua filter from felixdim-format-typst package
+- ENABLE use of simple date strings in YAML front matter while maintaining proper datetime handling
+
+
 v0.1.0
 ---
 
